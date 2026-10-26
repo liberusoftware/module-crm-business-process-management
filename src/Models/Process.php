@@ -4,8 +4,7 @@ declare(strict_types=1);
 
 namespace Liberu\CRM\BusinessProcessManagement\Models;
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Liberu\Foundation\Organizations\Models\Team;
+use App\Traits\IsTenantModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
@@ -19,10 +18,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  */
 final class Process extends Model
 {
-    public function team(): BelongsTo
-    {
-        return $this->belongsTo(Team::class);
-    }
+    use IsTenantModel;
 
     protected $table = 'crm_bpm_processes';
 
