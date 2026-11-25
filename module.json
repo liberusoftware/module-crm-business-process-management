@@ -2,7 +2,7 @@
   "name": "crm-business-process-management",
   "display_name": "CRM Business Process Management",
   "description": "Guided stages, required data, approvals, validations, service processes, exception routing and versioning",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\CRM\\BusinessProcessManagement\\BusinessProcessManagementServiceProvider",
   "requires": {
